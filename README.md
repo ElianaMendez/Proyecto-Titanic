@@ -26,7 +26,6 @@ El dataset utilizado proviene del [desafío Titanic de Kaggle](https://www.kaggl
 ### **Exploración inicial**  
 - Dimensiones del dataset.  
 - Valores nulos o faltantes.  
-- Distribuciones clave y correlaciones iniciales.  
 
 ---
 
