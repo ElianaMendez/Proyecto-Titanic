@@ -77,8 +77,8 @@ Se evaluaron varios modelos y técnicas de optimización para maximizar el rendi
 | Técnica                  | Precisión | AUC-ROC | Recall | F1-Score | Log Loss | Comentarios                                   |  
 |--------------------------|-----------|---------|--------|----------|----------|---------------------------------------------|  
 | **Modelo Base**          | 78.3%     | 0.82    | 0.62   | 0.70     | 0.62     | Sin optimizaciones adicionales.             |  
-| **PCA**                  | 81.2%     | 0.83    | 0.77   | 0.79     | 0.46     | Ligera pérdida de rendimiento.              |  
-| **Tratamiento Outliers** | 83.5%     | 0.87    | 0.81   | 0.82     | 0.43     | Mejor resultado en todas las métricas.      |  
+| **PCA**                  | xx.x%     | 0.xx    | 0.xx   | 0.xx     | 0.xx     | Ligera pérdida de rendimiento.              |  
+| **Tratamiento Outliers** | 78.6%     | 0.83    | 0.61   | 0.78     | 0.62     | Mejor resultado en todas las métricas.      |  
 
 ---
 
