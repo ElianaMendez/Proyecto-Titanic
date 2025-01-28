@@ -35,11 +35,10 @@ Se realizaron las siguientes tareas:
    - Imputación de valores faltantes en las columnas `Age` y `Embarked`.  
    - Eliminación de columnas irrelevantes (`PassengerId`, `Name`, `Ticket`, `Cabin`).  
 2. **Transformación**:  
-   - Codificación de variables categóricas (`Sex`, `Embarked`).  
-   - Normalización de valores numéricos como `Fare`.  
+   - Codificación de variables categóricas (`Sex`, `Embarked`).      
 3. **Creación de nuevas características**:  
-   - Agrupación de edades (`Child`, `Adult`, `Senior`).  
-   - Creación de una variable `FamilySize` basada en `SibSp` y `Parch`.  
+   - Creación de variable `FamilySize` basada en `SibSp` y `Parch`.
+   - Creación de variable `IsAlone` para indicar las personas que viajan solas, partiendo de `FamilySize`.   
 
 ---
 
