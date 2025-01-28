@@ -38,7 +38,8 @@ Se realizaron las siguientes tareas:
    - Codificación de variables categóricas (`Sex`, `Embarked`).      
 3. **Creación de nuevas características**:  
    - Creación de variable `FamilySize` basada en `SibSp` y `Parch`.
-   - Creación de variable `IsAlone` para indicar las personas que viajan solas, partiendo de `FamilySize`.   
+   - Creación de variable `IsAlone` para indicar las personas que viajan solas, partiendo de `FamilySize`.
+   - Creación de varibale `Family_Size_Ordinal` que captura la influencia del tamaño de la familia en la predicción. 
 
 ---
 
