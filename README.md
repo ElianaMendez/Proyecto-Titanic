@@ -46,12 +46,11 @@ Se realizaron las siguientes tareas:
 ## **4. Modelado**  
 Se utilizaron los siguientes modelos de Machine Learning:  
 1. **Regresión Logística**  
-2. **Árboles de Decisión**  
-3. **Random Forest**  
-4. **XGBoost**  
+2. **K-Nearest Neighbors (KNN)**  
+3. **Random Forest**    
 
 ### **Metodología**  
-- División del dataset en conjuntos de entrenamiento (80%) y prueba (20%).  
+- División del dataset en conjuntos de entrenamiento (67%) y prueba (33%).  
 - Evaluación mediante validación cruzada.  
 
 ### **Métricas de evaluación**  
@@ -71,7 +70,7 @@ Se evaluaron varios modelos y técnicas de optimización para maximizar el rendi
 - **AUC-ROC**: Mide la capacidad del modelo para distinguir entre clases.  
 - **Recall (Sensibilidad)**: Capacidad del modelo para identificar correctamente los sobrevivientes.  
 - **F1-Score**: Equilibrio entre precisión y sensibilidad.  
-- **Log Loss**: Pérdida logarítmica, útil para modelos probabilísticos.  
+- **Log Loss**: Pérdida logarítmica, útil para modelos probabilísticos. 
 
 ### **5.2 Comparativo de Resultados**  
 
@@ -124,4 +123,4 @@ El modelo final se implementó en un script ejecutable que permite cargar nuevos
 
 ## **8. Créditos**  
 - Dataset: [Kaggle Titanic Challenge](https://www.kaggle.com/c/titanic).  
-- Autor: [Eliana Méndez].  
+- Autor: Eliana Méndez.  
