@@ -77,50 +77,50 @@ Se evaluaron varios modelos y técnicas de optimización para maximizar el rendi
 | Técnica                  | Precisión | AUC-ROC | Recall | F1-Score | Log Loss | Comentarios                                   |  
 |--------------------------|-----------|---------|--------|----------|----------|---------------------------------------------|  
 | **Modelo Base**          | 78.3%     | 0.83    | 0.62   | 0.70     | 0.62     | Sin optimizaciones adicionales.             |  
-| **PCA**                  | 74.5%     | 0.81    | 0.63   | 0.68     | 0.xx     | Ligera pérdida de rendimiento.              |  
-| **Tratamiento Outliers** | 78.6%     | 0.83    | 0.64   | 0.78     | 0.62     | Mejor resultado en todas las métricas.      |  
-
----
-
-### **5.3 Gráficos del Mejor Modelo**  
-El mejor modelo, **Random Forest con tratamiento de outliers**, logró el mayor rendimiento. Los gráficos más relevantes incluyen:  
-1. **Curva ROC**: Comparación entre el modelo base y el modelo optimizado.  
-2. **Matriz de Confusión**: Desglose de verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos.  
-3. **Importancia de las Características**: Variables más influyentes después de las optimizaciones.  
-4. **Distribución de Predicciones Probabilísticas**: Muestra cómo el modelo ajustado asigna probabilidades más confiables.  
+| **PCA**                  | 78.9%     | 0.83    | 0.62   | 0.69     | 0.52     | Ligera pérdida de rendimiento.              |  
+| **Tratamiento Outliers** | 77.2%     | 0.83    | 0.63   | 0.77     | 0.62     | Mejor resultado en todas las métricas.      |  
 
 ---
 
 ### **Conclusión Final de Evaluación**  
-El tratamiento de outliers fue la técnica más efectiva, logrando:  
-- **AUC-ROC**: Incremento del 0.84 al 0.87.  
-- **Recall**: Mejor detección de sobrevivientes, pasando del 0.78 al 0.81.  
-- **Log Loss**: Reducción significativa, indicando un modelo más confiable para probabilidades.  
+Tras evaluar las técnicas aplicadas (**Modelo Base**, **PCA** y **Tratamiento Outliers**), se identificaron las siguientes características principales de cada modelo:
 
+1. **Modelo Base**  
+   - Ofrece un rendimiento equilibrado sin necesidad de transformaciones adicionales.  
+   - Métricas clave: **Precisión (78.3%)**, **AUC-ROC (0.83)**, **F1-Score (0.70)** y **Log Loss (0.62)**.  
+   - Es una solución competitiva y sencilla, ideal si se prioriza simplicidad.
+
+2. **PCA**  
+   - Destaca por la mayor **precisión (78.9%)** y la mejor calibración de predicciones, con el menor **Log Loss (0.52)**.  
+   - Métricas clave: **AUC-ROC (0.83)**, **Recall (0.62)** y **F1-Score (0.69)**.  
+   - Es ideal si se busca confianza en las probabilidades y un modelo optimizado para precisión.
+
+3. **Tratamiento Outliers**  
+   - Es la mejor opción para minimizar falsos negativos, logrando el mayor **recall (0.63)** y **F1-Score (0.77)**.  
+   - Métricas clave: **Precisión (77.2%)**, **AUC-ROC (0.83)** y **Log Loss (0.62)**.  
+   - Recomendado para escenarios en los que clasificar erróneamente casos positivos tiene un alto costo.
+
+### Modelo Seleccionado
+La elección depende de los objetivos específicos:  
+- **Tratamiento Outliers** es preferible para maximizar el recall y el F1-Score.  
+- **PCA** es adecuado si la prioridad es precisión y predicciones bien calibradas.  
+- **Modelo Base** es una alternativa válida por su simplicidad y buen desempeño general.
+  
 ---
-
-## **6. Despliegue y Conclusión**  
-El modelo final se implementó en un script ejecutable que permite cargar nuevos datos y predecir la supervivencia.  
 
 ### **Conclusiones**  
-- La supervivencia depende significativamente de factores sociales y económicos.  
-- Este proyecto demuestra la utilidad de Machine Learning para el análisis predictivo.  
-
-### **Próximos pasos**  
-- Optimización adicional del modelo.  
-- Considerar datos adicionales para enriquecer el análisis.  
+- A partir de los datos utilizados y mediante la utilización de técnicas avanzadas de Machine Learning, se pudo concluir que la supervivencia de los pasajeros de Titanic dependío significativamente de factores sociales y económicos, ya que variables relacionadas con tamaño de la familia, clase del boleto y tarifa pagadas aportaron información relevante para la predictibilidad del modelo.  
+- Este proyecto demuestró la utilidad de Machine Learning para el análisis predictivo de situaciones reales que pueden ser llevadas a diferentes contextos.  
 
 ---
 
-## **7. Estructura del Repositorio**  
-- `notebooks/`: Contiene los Jupyter Notebooks con el análisis detallado.  
-- `data/`: Dataset original y procesado.  
-- `scripts/`: Scripts Python para preprocesamiento y predicción.  
-- `models/`: Modelos entrenados guardados como archivos `.pkl`.  
+## **6. Estructura del Repositorio**  
+- `Desafio-Titanic-4.ipynb/`: Contiene los Jupyter Notebooks con el análisis detallado.  
 - `README.md`: Documentación del proyecto.  
 
 ---
 
-## **8. Créditos**  
+## **7. Créditos**  
 - Dataset: [Kaggle Titanic Challenge](https://www.kaggle.com/c/titanic).  
 - Autor: Eliana Méndez.  
+- Mentor: Agradecimientos especiales a Zurisadai Velazquez Manzanero, por la oportunidad de hacer parte de ésta iniciativa en la que nos compartió conocimiento valioso, por toda su entrega desinteresada para seguir aportando a nuestro crecimiento.
